@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply grid min-h-screen text-lg;
+  }
+}
+
+@layer utilities {
+  .border-gradient {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to bottom right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))
+        border-box;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+}
